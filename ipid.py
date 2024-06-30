@@ -1,2 +1,2 @@
-server_local = ' '
-server_public = ' '
+server_local = ' ' # Local ip address
+server_public = ' ' # Public ip address
