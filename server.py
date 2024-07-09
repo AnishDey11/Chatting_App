@@ -29,6 +29,7 @@ def handle_client(conn, addr):
         msg = conn.recv(2048).decode(FORMAT)
         if msg:
             if msg == DISCONNECT_MESSAGE:
+                print(f"{addr} [DISCONNECTED]")
                 connected = False
             # print(f"[{addr}] {msg}")
             broadcast(msg, conn, addr, clients)
